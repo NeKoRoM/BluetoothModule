@@ -85,8 +85,8 @@ class DeviceListFragment : Fragment(),ItemAdapter.Listener {
         rcViewPaired.layoutManager =  LinearLayoutManager(requireContext())
         rcViewSearch.layoutManager =  LinearLayoutManager(requireContext())
 
-        itemAdapter = ItemAdapter(this@DeviceListFragment)
-        discoveryAdapter = ItemAdapter(this@DeviceListFragment)
+        itemAdapter = ItemAdapter(this@DeviceListFragment, false)
+        discoveryAdapter = ItemAdapter(this@DeviceListFragment, true)
 
         rcViewPaired.adapter = itemAdapter
         rcViewSearch.adapter = discoveryAdapter
